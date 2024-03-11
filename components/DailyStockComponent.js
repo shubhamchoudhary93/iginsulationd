@@ -13,7 +13,6 @@ import {
 } from "react-native-responsive-screen";
 import { ActivityIndicator } from "react-native-web";
 import generateTestData from "../utils/generateTestData";
-import SelectDropdown from "react-native-select-dropdown";
 import StockListDaily from "./StockListDaily";
 import DailyStockScreenSelectDropdown from "./DailyStockScreenSelectDropdown";
 
@@ -60,7 +59,7 @@ export default function DailyStockComponent({ stocks }) {
   };
 
   return (
-    <ScrollView className="flex-1 bg-white">
+    <ScrollView style={{ padding: wp(5) }} className="flex-1 bg-white">
       {stocks.length > 0 ? (
         <View>
           <DailyStockScreenSelectDropdown
@@ -87,7 +86,7 @@ export default function DailyStockComponent({ stocks }) {
                   Current Stock: {stockDetail.current}
                 </Text>
               </View>
-              <View style={{ height: hp(9) }}>
+              <View style={{ height: wp(5) }}>
                 <TextInput
                   autoCapitalize="none"
                   autoCorrect={false}
@@ -96,7 +95,6 @@ export default function DailyStockComponent({ stocks }) {
                   style={{
                     fontSize: hp(2),
                     paddingStart: 30,
-                    marginHorizontal: 20,
                     marginVertical: 10,
                     borderRadius: 10,
                   }}
@@ -109,7 +107,6 @@ export default function DailyStockComponent({ stocks }) {
                 style={{
                   flexDirection: "row",
                   height: hp(9),
-                  marginHorizontal: 20,
                 }}
               >
                 <TouchableOpacity
@@ -163,14 +160,13 @@ export default function DailyStockComponent({ stocks }) {
           <TouchableOpacity
             onPress={() => console.log("commit")}
             style={{
-              height: hp(6.5),
+              height: hp(10),
               marginVertical: 10,
-              marginHorizontal: 20,
             }}
             className="flex-1 bg-neutral-500 justify-center items-center"
           >
             <Text
-              style={{ fontSize: hp(2.7) }}
+              style={{ fontSize: hp(5) }}
               className="text-white font-bold tracking-wider"
             >
               SAVE

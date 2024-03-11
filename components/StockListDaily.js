@@ -9,8 +9,6 @@ export default function StockListDaily({ stockTransactions }) {
   return (
     <View
       style={{
-        height: wp(80),
-        marginHorizontal: 20,
         backgroundColor: "#f1f5f9",
         borderRadius: 10,
         padding: 10,

@@ -41,16 +41,16 @@ export default function signin() {
           autoCapitalize="none"
           autoCorrect={false}
           onChangeText={(value) => (emailRef.current = { value })}
-          style={{ fontSize: hp(2) }}
-          className="font-semibold text-neutral-700 h-10 p-2"
+          style={{ fontSize: hp(3) }}
+          className="font-semibold text-neutral-700 h-10 pl-2 pr-2"
           placeholder="Email Address"
           placeholderTextColor={"gray"}
         />
         <TextInput
           secureTextEntry
           onChangeText={(value) => (passwordRef.current = { value })}
-          style={{ fontSize: hp(2) }}
-          className="font-semibold text-neutral-700 h-10 p-2"
+          style={{ fontSize: hp(3) }}
+          className="font-semibold text-neutral-700 h-10 pl-2 pr-2"
           placeholder="Password"
           placeholderTextColor={"gray"}
         />

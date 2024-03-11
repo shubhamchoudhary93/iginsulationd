@@ -14,7 +14,6 @@ export default function DailyStockScreenSelectDropdown({ list, handle, text }) {
       defaultButtonText={text}
       buttonStyle={{
         backgroundColor: "#f1f5f9",
-        marginHorizontal: 20,
         marginVertical: 10,
         width: wp(90),
         borderRadius: 10,
